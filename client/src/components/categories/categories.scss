@@ -1,0 +1,29 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+.categoriesTitle {
+  color: rgba(0, 0, 0, 0.368);
+  font-size: 50px;
+  text-align: center;
+}
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  @include mobile {
+    padding: 0px;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,52 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+.categroiesItemContainer {
+  flex: 1;
+  margin: 3px;
+  height: 70vh;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mobile {
+      height: 20vh;
+    }
+  }
+  .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    button {
+      border: none;
+      padding: 10px;
+      background-color: white;
+      color: gray;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

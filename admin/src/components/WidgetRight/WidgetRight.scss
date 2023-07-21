@@ -1,0 +1,53 @@
+.widgetRight {
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  flex: 1;
+  padding: 20p;
+  margin-right: 20px;
+  .widgetRightTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .widgetRightList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .widgetRightListItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 20px 0px;
+      .widgetRightImg {
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .widgetRightUser {
+        display: flex;
+        flex-direction: column;
+        .widgetRightUsername {
+          font-weight: 600;
+        }
+        .widgetRightUserTitle {
+          font-weight: 300;
+        }
+      }
+      .widgetRightButton {
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 10px;
+        background-color: #eeeef7;
+        color: #555;
+        cursor: pointer;
+        .widgetRightIcon {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
